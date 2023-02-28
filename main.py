@@ -95,10 +95,10 @@ with header.expander("About the Winter Garden 🔽", expanded=True):
 #     #User input boxes
 
 speckleServer= "speckle.xyz"#serverCol.text_input("Server URL", "speckle.xyz", help="Speckle server to connect.")
-speckleServer= []
 
-speckleToken="07500a43ee453d741a7e783fa036ce708987373741" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
-speckleToken= []    
+
+speckleToken="f1497f43121b81eccdc235fd2f4e8bc32371ca089b" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
+
     #----------------
 
  ###  interacting with speckle Server ###
