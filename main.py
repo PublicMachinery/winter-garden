@@ -163,7 +163,7 @@ with viewer2:
     miroCol.subheader("Winter Garden Slide show")
     miroCol._iframe(miro_press,height=540)
     speckleCol.subheader("Winter garden Digital twin")
-    speckleCol._iframe(embed_src)
+    speckleCol._iframe(embed_src,height=540)
 
     #VIEWER
 
