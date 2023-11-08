@@ -125,19 +125,19 @@ streams=client.stream.list(stream_limit=10)
 #print (streams)
 #Get Stream Names
 
-stream_id= [s.id for s in streams if s.name == "Winter Garden" ]
+#stream_id= [s.id for s in streams if s.name == "Winter Garden" ]
 
 #sName=client.stream.search("Winter_Garden") #st.selectbox(label="Select your stream", options=streamNames,help="Select your Stream from the dromdown menu")
 
 #Selected stream
 #print (stream_id[0])
-stream=client.stream.get(stream_id[0])
+#stream=client.stream.get(stream_id[0])
 
 #Stream Branches
 #branches=client.branch.list(stream.id)
 #print (stream_id)
 #Stream Commits
-commits= client.commit.list(stream_id[0],limit=100)
+#commits= client.commit.list(stream_id[0],limit=100)
     #Embedded Iframe
 
 # def commit2viewer(stream,commit,height=400)-> str:
@@ -152,8 +152,9 @@ commits= client.commit.list(stream_id[0],limit=100)
 
 def commit2viewer2(stream,commit,height=400)-> str:
 
-    embed_src="https://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
-    #embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=f42a6e31b6"
+    #embed_src="https://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
+    embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=7148e02723&autoload=true&hidesidebar=true"
+    #<iframe src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=7148e02723&autoload=true&hidesidebar=true" width="600" height="400" frameborder="0"></iframe>
     return embed_src
 with viewer2:
     miro_press="https://miro.com/app/embed/uXjVPIM8c1s=/?pres=1&frameId=3458764542318361710&embedId=876239047326"
@@ -161,7 +162,7 @@ with viewer2:
     miroCol.subheader("Winter Garden Slide show")
     miroCol._iframe(miro_press,height=540)
     speckleCol.subheader("Winter garden Digital twin")
-    speckleCol._iframe(commit2viewer2(stream,commits[0]),height=540)
+    #speckleCol._iframe(commit2viewer2(stream,commits[0]),height=540)
 
     #VIEWER
 
