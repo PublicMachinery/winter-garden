@@ -157,12 +157,13 @@ def commit2viewer2():
     #<iframe src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=7148e02723&autoload=true&hidesidebar=true" width="600" height="400" frameborder="0"></iframe>
     return embed_src
 with viewer2:
+    embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=7148e02723&autoload=true&hidesidebar=true"
     miro_press="https://miro.com/app/embed/uXjVPIM8c1s=/?pres=1&frameId=3458764542318361710&embedId=876239047326"
     miroCol, speckleCol = st.columns(2)
     miroCol.subheader("Winter Garden Slide show")
     miroCol._iframe(miro_press,height=540)
     speckleCol.subheader("Winter garden Digital twin")
-    speckleCol._iframe(commit2viewer2)
+    speckleCol._iframe(embed_src)
 
     #VIEWER
 
