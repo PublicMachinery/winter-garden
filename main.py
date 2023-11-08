@@ -150,7 +150,7 @@ streams=client.stream.list(stream_limit=10)
 #     st.subheader("Winter Garden Digital Twin")
 #     commit2viewer(stream, commits[0])
 
-def commit2viewer2(height=400)-> str:
+def commit2viewer2(height=400):
 
     #embed_src="https://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
     embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=7148e02723&autoload=true&hidesidebar=true"
